@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="satn_60">60dp</dimen>
+    <dimen name="satn_110">120dp</dimen>
+    <dimen name="satn_160">180dp</dimen>
+    <dimen name="satn_210">240dp</dimen>
+
+</resources>

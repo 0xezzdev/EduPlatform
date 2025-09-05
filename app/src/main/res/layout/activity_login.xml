@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity"
+    android:layoutDirection="ltr">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="130dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_gravity="center">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Welcome to Edu"
+                                android:gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/parp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please login to start learning"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:textSize="15dp"
+                                android:textColor="#808080"
+                                android:alpha="0.7"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/email_li"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Email"
+                                        android:inputType="textEmailAddress"
+                                        android:drawableEnd="@drawable/email_ic"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/pass_li"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Password"
+                                        android:inputType="textPassword"
+                                        android:drawableEnd="@drawable/pass_ic"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/forgotPass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="I forgot my password!"
+                                android:textColor="#832494"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="20dp">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/login_b"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/log_bg"
+                                    android:text="Login"
+                                    android:textSize="20dp"
+                                    android:textColor="#FFFFFF"
+                                    android:gravity="center"/>
+
+                                <com.github.ybq.android.spinkit.SpinKitView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/loading"
+                                    style="@style/SpinKitView.ThreeBounce"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="8dp"
+                                    app:SpinKit_Color="#800080"
+                                    android:visibility="gone"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Don't have an account? "
+                                    android:textColor="@color/black"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/signup_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sign Up"
+                                    android:textColor="#832494"
+                                    android:layout_gravity="center"/>
+
+
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/eic_c"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Powered by: "
+                                    android:layout_gravity="center"
+                                    android:alpha="0.7"/>
+
+                                <TextView
+                                    android:id="@+id/ezzeldeenProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ezzeldeen Mohamed"
+                                    android:layout_gravity="center"
+                                    android:textColor="#00BFFf"
+                                    android:alpha="0.7"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="All Rights Received 2024-2025"
+                                    android:layout_gravity="center"
+                                    android:alpha="0.7"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="60dp"/>
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

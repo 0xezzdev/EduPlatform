@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "342508629244",
+    "project_id": "edu-platform-ezzco",
+    "storage_bucket": "edu-platform-ezzco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342508629244:android:ad011215f3ec78a7a2bb79",
+        "android_client_info": {
+          "package_name": "com.ezzco.eduplatform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf9LEWmnujz_z3a-Fy4qp-9n8F3slqMjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
