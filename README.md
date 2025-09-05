@@ -21,7 +21,7 @@ An Android application that provides a mini educational platform:
 3. Run the app on an emulator or a physical device.
 
 ## Tech Stack
-- Android (Java/Kotlin)
+- Android (Java)
 - Firebase / Custom backend (to be integrated)
 
 ---
